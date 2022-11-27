@@ -1,5 +1,18 @@
 package services;
 
-public class BrazilInterestService {
+public class BrazilInterestService implements InterestService {
+	
+	private double interestRate;
+
+	public BrazilInterestService(double interestRate) {
+		this.interestRate = interestRate;
+	}
+	
+	@Override
+	public double getInterstRate() {
+		return interestRate;
+	}
+	
+	
 
 }
